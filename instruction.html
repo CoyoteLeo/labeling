@@ -47,30 +47,30 @@
             <div style="text-align: left;">
                 <div>
                     <h3>Background</h3>
-                    There are two articles and multiple pairs that consist of two short paragraphs(most less than 3
-                    sentences) from the article, named recalled paragraph and retold paragraph with events of the
-                    paragraphs.<br />
+                    There are two articles followed by multiple pairs of short paragraphs (most fewer than 3
+                    sentences) from the articles. The two articles are labeled as "Recalled Paragraph" and "Retold Paragraph" with events from the two found below in bolded text.
+                    The goal is to label the pair of paragraphs as either "Match" or "Conflict" depending on whether or not the meanings of the two are consistent.<br />
                 </div>
                 <div>
                     <h3>Annotation</h3>
                     <h5>Steps</h5>
                     <ol>
-                        <li>Read the original articles</li>
-                        <li>Read the paragraphs</li>
-                        <li>Connect the events with the correct label based on the information from articles and
+                        <li>Read the original articles.</li>
+                        <li>Read the paragraphs.</li>
+                        <li>Connect the events with the correct label based on the information from the articles and
                             paragraphs.<br>
-                            PS: Just drag the dot near the source event to the dot near the target event, and the
-                            connection will be built automatically.<br>
+                            PS: Just drag the dot near the source event to the dot near the target event and the
+                            connection will be built automatically.
                             PS: If you want to remove the connection, you can click the "X" button near any end of the
                             connection, it'll remove all connections about that dot.
                         </li>
-                        <li>Switch to the next pair until the end, and submit.</li>
+                        <li>After going through all pairs using the "Next" button, click "Submit."</li>
                     </ol>
-                    <h5>WHAT is Event</h5>
+                    <h5>WHAT is an Event</h5>
                     <div style="margin-left: 50px;">
-                        An event consists of subject, predicate, and object. Below is an example,<br>
+                        An event consists of a subject, a predicate, and an object. Below is an example,<br>
                         <img src="event.jpg" width="700px" style="border: 5px red solid;"><br>
-                        The above image represents that there are two events belonging to the sentences at the top.
+                        The above image tells us that there are two events belonging to the bolded sentence at the top.
                     </div>
                     <h5>Relation Label</h5>
                     <table class="table table-borderless">
@@ -78,9 +78,9 @@
                             <td style="text-align: right;width: 120px;font-weight: bold;vertical-align: top;">Match:
                             </td>
                             <td style="text-align: justify;">
-                                The event from both recalled paragraph and retold paragraph describe the same thing, and
-                                there are no conflicts between each other. (i.e. they can use different words, but
-                                express the same meaning.), there are some examples below
+                                The event from both the Recalled Paragraph and the Retold Paragraph describe the same thing, and
+                                there are no conflicts between each other (i.e. they can use different words, but they
+                                express the same meaning). The following are some examples:
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -120,9 +120,9 @@
                                 <div style="color: red;">
                                     PS:<br>he, asked, me
                                     <ul>
-                                        <li>he => subject</li>
-                                        <li>asked => predciate</li>
-                                        <li>me => object</li>
+                                        <li>he &rarr; subject</li>
+                                        <li>asked &rarr; predciate</li>
+                                        <li>me &rarr; object</li>
                                     </ul>
                                 </div>
                             </td>
@@ -131,9 +131,8 @@
                             <td style="text-align: right;width: 120px;font-weight: bold;vertical-align: top;">Conflict:
                             </td>
                             <td style="text-align: justify;">
-                                In contrast to "Match", <spanstyle="font-weight: bold;">Conflict</span> means the events
-                                    describe the same thing, but the meaning is inconsistent. there are some examples
-                                    below
+                                In contrast to "Match," <span style=font-weight:bold;">"Conflict"</span> means the events
+                                    describe the same thing, but the meaning is inconsistent. Here are some examples:
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -148,15 +147,13 @@
                                                 <td>No one, plays, sports</td>
                                                 <td>you, do, sports</td>
                                                 <td>Conflict</td>
-                                                <td style="text-align: justify;">Same event, but their meaning are
-                                                    conflict.</td>
+                                                <td style="text-align: justify;">Same event, but their meanings conflict.</td>
                                             </tr>
                                             <tr>
                                                 <td>I, walk to, school</td>
                                                 <td>I, drive to, school</td>
                                                 <td>Conflict</td>
-                                                <td style="text-align: justify;">Same event, but their meaning are
-                                                    conflict.</td>
+                                                <td style="text-align: justify;">Same event, but their meanings conflict.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -167,8 +164,7 @@
                                 relation):
                             </td>
                             <td style="text-align: justify;">
-                                If there are not any relations between events, you can just leave it empty and continue
-                                to label the next pair.<br>
+                                If there are no relations between the events, you can leave it empty and continue on to the next pair.<br>
                                 In other words, you don't have to link the dots between the recalled and retold events.
                                 <table class="table">
                                     <thead>
@@ -191,13 +187,12 @@
                                             <td>We, go to, Toronto</td>
                                             <td>We, Driving back</td>
                                             <td>(No relation)</td>
-                                            <td style="text-align: justify;">Although the events seem that they have
-                                                relations about match or conflict, the sentences of them are,<br>
+                                            <td style="text-align: justify;">Although the events seem to either match or conflict, the original sentences are,<br>
                                                 - recalled: Our next stop was Toronto.<br>
                                                 - retold: We ended our visit and driving back made me a little
                                                 nervous.<br><br>
-                                                In original sentences/paragraphs, they describe the different things, so
-                                                there are not any relations between these events.
+                                                In the original sentences/paragraphs, they describe different things, so
+                                                there are no relations between these events.
                                             </td>
                                         </tr>
                                     </tbody>
