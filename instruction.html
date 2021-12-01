@@ -47,7 +47,7 @@
             <div style="text-align: left;">
                 <div>
                     <h3>Background</h3>
-                    - There are two articles and multiple pair that consist of two short paragraphs(most less than 3
+                    There are two articles and multiple pairs that consist of two short paragraphs(most less than 3
                     sentences) from the article, named recalled paragraph and retold paragraph with events of the
                     paragraphs.<br />
                 </div>
@@ -57,10 +57,17 @@
                     <ol>
                         <li>Read the original articles</li>
                         <li>Read the paragraphs</li>
-                        <li>Connect the events with correct label base on the information from articles and paragraphs.
+                        <li>Connect the events with the correct label based on the information from articles and
+                            paragraphs.
                         </li>
-                        <li>Switch to next pair until the enc, and submit.</li>
+                        <li>Switch to the next pair until the end, and submit.</li>
                     </ol>
+                    <h5>WHAT is Event</h5>
+                    <div style="margin-left: 50px;">
+                        An event consists of subject, predicate, and object. Below is an example,<br>
+                        <img src="event.jpg" width="700px" style="border: 5px red solid;"><br>
+                        The above image represents that there are two events belonging to the sentences at the top.
+                    </div>
                     <h5>Relation Label</h5>
                     <table class="table table-borderless">
                         <tr>
@@ -68,15 +75,15 @@
                             </td>
                             <td style="text-align: justify;">
                                 The event from both recalled paragraph and retold paragraph describe the same thing, and
-                                there are no conflicts between each other.(i.e. they can use different words, but
+                                there are no conflicts between each other. (i.e. they can use different words, but
                                 express the same meaning.), there are some examples below
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>relation</th>
+                                            <th style="width: 120px;">relation</th>
                                             <th>recalled event</th>
                                             <th>retold event</th>
-                                            <th>reason</th>
+                                            <th style="text-align: justify;">reason</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -84,13 +91,15 @@
                                             <td>Match</td>
                                             <td>Our family, consisting of, 8 - year old son.</td>
                                             <td>we, have, an 8 year old</td>
-                                            <td>different description, but same meaning</td>
+                                            <td style="text-align: justify;">different description, but same meaning
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Match</td>
                                             <td>We, proceeded to, our hotel.</td>
                                             <td>We, reaching, our hotel on the Canadian side</td>
-                                            <td>the second is more detailed, but both of them have same meaning.</td>
+                                            <td style="text-align: justify;">the second is more detailed, but both of
+                                                them have same meaning.</td>
                                         </tr>
                                         <tr>
                                             <td>Match</td>
@@ -98,11 +107,20 @@
                                                 2. he, asked, marry him
                                             </td>
                                             <td>he, propose</td>
-                                            <td>Each recalled/retold event may matched to multiple retold/recalled
+                                            <td style="text-align: justify;">Each recalled/retold event may matched to
+                                                multiple retold/recalled
                                                 events.</td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div style="color: red;">
+                                    PS:<br>he, asked, me
+                                    <ul>
+                                        <li>he => subject</li>
+                                        <li>asked => predciate</li>
+                                        <li>me => object</li>
+                                    </ul>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -115,10 +133,10 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th>relation</th>
+                                                <th style="width: 120px;">relation</th>
                                                 <th>recalled event</th>
                                                 <th>retold event</th>
-                                                <th>reason</th>
+                                                <th style="text-align: justify;">reason</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -126,13 +144,15 @@
                                                 <td>Conflict</td>
                                                 <td>No one, plays, sports</td>
                                                 <td>you, do, sports</td>
-                                                <td>Same event, but their meaning are conflict.</td>
+                                                <td style="text-align: justify;">Same event, but their meaning are
+                                                    conflict.</td>
                                             </tr>
                                             <tr>
                                                 <td>Conflict</td>
                                                 <td>I, walk to, school</td>
                                                 <td>I, drive to, school</td>
-                                                <td>Same event, but their meaning are conflict.</td>
+                                                <td style="text-align: justify;">Same event, but their meaning are
+                                                    conflict.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -143,12 +163,45 @@
                                 relation):
                             </td>
                             <td style="text-align: justify;">
-                                If there is not any relations between event, you can just leave it empty and continue to
+                                If there are not any relations between events, you can just leave it empty and continue
+                                to
                                 label the next pair
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 120px;">relation</th>
+                                            <th>recalled event</th>
+                                            <th>retold event</th>
+                                            <th style="text-align: justify;">reason</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>(No relation)</td>
+                                            <td>we, drive to, our hotel on the Canadian side </td>
+                                            <td>we, exploring, many activities
+                                            </td>
+                                            <td style="text-align: justify;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>(No relation)</td>
+                                            <td>We, go to, Toronto</td>
+                                            <td>We, Driving back</td>
+                                            <td style="text-align: justify;">Although the events seem that they have
+                                                relations about match or conflict, the sentences of them are,<br>
+                                                - recalled: Our next stop was Toronto.<br>
+                                                - retold: We ended our visit and driving back made me a little
+                                                nervous.<br><br>
+                                                In original sentences/paragraphs, they describe the different things, so
+                                                there are not any relations between these events.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </td>
                         </tr>
                     </table>
-                    Example result:
+                    Example result of one pair:
                     <img src="example.png" width="100%" style="border: 5px red solid;">
                 </div>
             </div>
