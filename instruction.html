@@ -48,8 +48,10 @@
                 <div>
                     <h3>Background</h3>
                     There are two articles followed by multiple pairs of short paragraphs (most fewer than 3
-                    sentences) from the articles. The two articles are labeled as "Recalled Paragraph" and "Retold Paragraph" with events from the two found below in bolded text.
-                    The goal is to label the pair of paragraphs as either "Match" or "Conflict" depending on whether or not the meanings of the two are consistent.<br />
+                    sentences) from the articles. The two articles are labeled as "Recalled Paragraph" and "Retold
+                    Paragraph" with events from the two found below in bolded text.
+                    The goal is to label the pair of paragraphs as either "Match" or "Conflict" depending on whether or
+                    not the meanings of the two are consistent.<br />
                 </div>
                 <div>
                     <h3>Annotation</h3>
@@ -78,9 +80,14 @@
                             <td style="text-align: right;width: 120px;font-weight: bold;vertical-align: top;">Match:
                             </td>
                             <td style="text-align: justify;">
-                                The event from both the Recalled Paragraph and the Retold Paragraph describe the same thing, and
-                                there are no conflicts between each other (i.e. they can use different words, but they
-                                express the same meaning). The following are some examples:
+                                The event from both the Recalled Paragraph and the Retold Paragraph describe the same
+                                thing, and there are no conflicts between each other (i.e. they can use different words,
+                                but they express the <span style="font-weight: bold;">same meanings</span>). Please mind
+                                that they're the same things, which
+                                means that they must occur at the <span style="font-weight: bold;">same timing</span>.
+                                That is, any kinds of causation will NOT
+                                be seen as a <span style="font-weight: bold;">MATCH</span>. The following are some
+                                examples:
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -121,7 +128,7 @@
                                     PS:<br>he, asked, me
                                     <ul>
                                         <li>he &rarr; subject</li>
-                                        <li>asked &rarr; predciate</li>
+                                        <li>asked &rarr; predicate</li>
                                         <li>me &rarr; object</li>
                                     </ul>
                                 </div>
@@ -131,32 +138,52 @@
                             <td style="text-align: right;width: 120px;font-weight: bold;vertical-align: top;">Conflict:
                             </td>
                             <td style="text-align: justify;">
-                                In contrast to "Match," <span style=font-weight:bold;">"Conflict"</span> means the events
-                                    describe the same thing, but the meaning is inconsistent. Here are some examples:
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Recalled event</th>
-                                                <th>Retold event</th>
-                                                <th style="width: 120px;">Relation</th>
-                                                <th>Reason</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>No one, plays, sports</td>
-                                                <td>you, do, sports</td>
-                                                <td>Conflict</td>
-                                                <td style="text-align: justify;">Same event, but their meanings conflict.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>I, walk to, school</td>
-                                                <td>I, drive to, school</td>
-                                                <td>Conflict</td>
-                                                <td style="text-align: justify;">Same event, but their meanings conflict.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                In contrast to "Match", <span style="font-weight:bold;">"Conflict"</span> means the
+                                events describe the <span style="font-weight:bold;">same event (also at the same
+                                    timing), but it's obviously inconsistent</span>. Moreover, the inconsistences not
+                                only occur at Predicate, but could also occur at Subject or Object. Here are some
+                                examples:
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Recalled event</th>
+                                            <th>Retold event</th>
+                                            <th style="width: 120px;">Relation</th>
+                                            <th>Reason</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>No one, plays, sports</td>
+                                            <td>you, do, sports</td>
+                                            <td>Conflict</td>
+                                            <td style="text-align: justify;">Same event, but their meanings conflict.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>I, walk to, school</td>
+                                            <td>I, drive to, school</td>
+                                            <td>Conflict</td>
+                                            <td style="text-align: justify;">Same event, but their meanings conflict.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>he, helped, me</td>
+                                            <td>1. My mother, help up, me<br>2. I, told, her</td>
+                                            <td>Conflict</td>
+                                            <td style="text-align: justify;">
+                                                - <span style="font-weight:bold;">recalled</span>: my brother was
+                                                staying with me and he came quickly and helped me<br />
+                                                - <span style="font-weight:bold;">retold</span>: My mother came from out
+                                                of her room to attend to me, trying to help me up at first, but when I
+                                                screamed in pain after she pulled my arm, I just told her to call for
+                                                help.<br><br>
+
+                                                The event at the same timing, but their subjects conflict.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </td>
                         </tr>
                         <tr>
@@ -164,8 +191,13 @@
                                 relation):
                             </td>
                             <td style="text-align: justify;">
-                                If there are no relations between the events, you can leave it empty and continue on to the next pair.<br>
-                                In other words, you don't have to link the dots between the recalled and retold events.
+                                If there are no relations between the events, you can leave it empty and continue on to
+                                the next pair.<br />
+                                In other words, you don't have to link the dots between the recalled and retold
+                                events.<br />
+
+                                <span style="font-weight:bold;">P.S. : Some relations must be seen as (no
+                                    relations). Such as Casuation, Sequence ctions, etc.</span>
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -187,10 +219,12 @@
                                             <td>We, go to, Toronto</td>
                                             <td>We, Driving back</td>
                                             <td>(No relation)</td>
-                                            <td style="text-align: justify;">Although the events seem to either match or conflict, the original sentences are,<br>
-                                                - recalled: Our next stop was Toronto.<br>
-                                                - retold: We ended our visit and driving back made me a little
-                                                nervous.<br><br>
+                                            <td style="text-align: justify;">Although the events seem to either match or
+                                                conflict, the original sentences are,<br>
+                                                - <span style="font-weight:bold;">recalled</span>: Our next stop was
+                                                Toronto.<br>
+                                                - <span style="font-weight:bold;">retold</span>: We ended our visit and
+                                                driving back made me a little nervous.<br><br>
                                                 In the original sentences/paragraphs, they describe different things, so
                                                 there are no relations between these events.
                                             </td>
